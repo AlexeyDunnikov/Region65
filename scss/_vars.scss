@@ -1,0 +1,34 @@
+$dark: #1c2e38;
+$orange: #e36931;
+$grey: #bbc0ce;
+
+%title-font {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  color: $dark;
+  font-size: 35px;
+  line-height: 52px;
+  @media (max-width: 800px) {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+@mixin image-element($img-url, $width, $height) {
+  content: "";
+  position: absolute;
+  background-image: url($img-url);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: $width;
+  height: $height;
+}
+
+@mixin color-element($color, $width, $height) {
+  content: "";
+  position: absolute;
+  background-color: $color;
+  width: 100%;
+  max-width: $width;
+  height: $height;
+}

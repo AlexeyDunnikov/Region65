@@ -1,0 +1,630 @@
+@media (max-width: 1400px) {
+  .application {
+    top: 0;
+    height: 500px;
+    border-top-left-radius: 35% 40%;
+    border-bottom-left-radius: 35% 40%;
+    &__close-button {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .header {
+    &__application-btn {
+      display: none;
+    }
+  }
+  .footer {
+    &__nav {
+      display: none;
+    }
+    &__phone-box {
+      margin-left: 57px;
+    }
+  }
+  .services {
+    &__content-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__slider {
+      max-width: 700px;
+    }
+    &__slider-item {
+      margin: 0;
+    }
+  }
+  .rent {
+    background: $dark;
+    &__wrapper {
+      display: block;
+    }
+    &__content {
+      margin: 0 auto 20px;
+    }
+    &__content-title {
+      color: #fff;
+    }
+    &__links-list {
+      max-width: 100%;
+      justify-content: center;
+    }
+  }
+  .equipment {
+    &__slider__arrow {
+      left: 250px;
+      &--next {
+        left: 330px;
+      }
+    }
+  }
+  .about-rent {
+    &__img {
+      display: none;
+    }
+    &__inner {
+      max-width: 100%;
+    }
+    &__text-box {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .catalog {
+    &__item-content {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .services {
+    &__content-buttons {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    &__inner {
+      display: block;
+    }
+    &__content {
+      margin: 0 auto 25px;
+      text-align: center;
+    }
+    &__slider {
+      margin: 0 auto;
+    }
+  }
+  .equipment {
+    &__item-title {
+      margin-bottom: 20px;
+    }
+    &__item__pages-box {
+      margin-bottom: 20px;
+    }
+    &__item-name {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__button {
+      left: 41.5%;
+    }
+  }
+  .delivery {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+    &__text {
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+    &__img-box {
+      width: 80%;
+      margin-right: 0;
+    }
+    &__img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    &__content {
+      max-width: 100%;
+    }
+  }
+  .about-top {
+    &__text {
+      font-size: 25px;
+      line-height: 34px;
+    }
+    &__img {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &__phone-link {
+      display: none;
+    }
+  }
+  .about-rent {
+    &__inner {
+      margin: 40px 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .rent-popup {
+    &__list {
+      display: block;
+      margin-bottom: 25px;
+    }
+    &__item:nth-child(2n + 1) {
+      width: 100%;
+    }
+    &__item:nth-child(2n) {
+      width: 100%;
+      margin-left: 0;
+    }
+    &__bottom {
+      display: block;
+    }
+    &__button {
+      margin-bottom: 10px;
+    }
+    &__bottom-text {
+      text-align: right;
+      margin-left: auto;
+    }
+  }
+  .equipment {
+    &__item__img-wrapper {
+      display: none;
+    }
+    &__item-content {
+      width: 100%;
+      text-align: center;
+      padding: 30px 20px 50px;
+    }
+    &__item-link {
+      margin: 0 auto;
+    }
+    &__slider__arrow {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15px;
+      &--next {
+        right: 15px;
+        left: auto;
+      }
+    }
+    &__button {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .about-advantages {
+    &__list {
+      display: block;
+    }
+    &__item {
+      margin-right: 0;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &__search-btn {
+      display: none;
+    }
+    &__open-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35px;
+      height: 27px;
+      cursor: pointer;
+      span {
+        width: 100%;
+        height: 3px;
+        border-radius: 2px;
+        background-color: $dark;
+      }
+    }
+  }
+  .footer {
+    &__phaks-box {
+      display: none;
+    }
+  }
+  .main-nav {
+    position: absolute;
+    transform: translateY(-100%);
+    left: 15px;
+    right: 15px;
+    top: 0;
+    transition: ease 0.3s;
+    z-index: 20;
+    &--active {
+      transform: translateY(69px);
+    }
+    &__list {
+      //   position: relative;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+      padding: 30px 0;
+      z-index: 20;
+    }
+    &__item {
+      font-weight: 400;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__item + &__item {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    &__close-btn {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      z-index: 200;
+      &:hover {
+        .main-nav__close-img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    &__close-img {
+      width: 25px;
+      height: 25px;
+      transition: ease 0.3s;
+    }
+  }
+  .shop-top {
+    margin: 30px 0;
+    &__title {
+      padding: 0;
+    }
+  }
+  .catalog {
+    &__items {
+      grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+    }
+    &__filter {
+      position: absolute;
+      background-color: #fff;
+      padding: 15px;
+      max-width: 300px;
+      transform: translateX(-110%);
+      transition: ease 0.3s;
+      margin-left: -15px;
+      box-shadow: 5px 5px 20px rgba($dark, 0.3);
+      &--active {
+        transform: translateX(0);
+      }
+    }
+    &__item-title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__item__specification {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .filter-button {
+    display: flex;
+  }
+  .breadcrumbs {
+    position: relative;
+  }
+  .payment {
+    &__inner {
+      padding: 50px 0;
+    }
+    &__main-text {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    &__item {
+      margin: 0 20px 15px;
+    }
+    &__item + &__item {
+      margin-left: 0;
+    }
+    &__add-text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .about-top {
+    &__text {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    .container {
+      padding-top: 20px;
+    }
+  }
+  .about-items {
+    .about-item:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+  .about-rent {
+    &__inner {
+      padding: 30px 20px;
+    }
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .about-advantages {
+    &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .application {
+    padding: 50px 20px 50px 60px;
+  }
+  .services {
+    &__content {
+      padding-top: 0;
+    }
+    &__slider {
+      display: none;
+    }
+  }
+  .contacts {
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    &__inner {
+      display: block;
+    }
+    &__left {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &__right {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  .delivery {
+    &__text {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__item-text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__img-box {
+      width: 100%;
+    }
+    &__img {
+      max-height: 200px;
+    }
+  }
+}
+
+@media (max-width: 552px) {
+  .footer {
+    &__top {
+      flex-wrap: wrap;
+    }
+    &__phone-box {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 10px;
+      justify-content: center;
+    }
+    &__phone-text {
+      margin-right: 10px;
+    }
+    &__bottom {
+      display: block;
+      text-align: center;
+    }
+  }
+  .catalog {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      flex-wrap: wrap;
+    }
+    &__item__img-box {
+      margin-right: 0;
+      width: 100%;
+      margin-top: 10px;
+    }
+    &__item-img {
+      object-fit: contain;
+    }
+    &__item-content {
+      order: -1;
+      width: 100%;
+    }
+  }
+  .payment {
+    &__main-text {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__add-text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .application {
+    left: 0;
+    &__wrapper {
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 15px;
+    }
+    &__close-button {
+      width: 40px;
+      height: 40px;
+      left: -50px;
+    }
+  }
+  .rent-popup {
+    &__inner {
+      padding: 20px 15px;
+    }
+    &__item {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .logo {
+    width: 50px;
+  }
+
+  .services {
+    &__content-title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    &__content-buttons {
+      display: block;
+    }
+    &__content-button {
+      margin: 0 auto;
+    }
+    &__content-button + &__content-button {
+      margin: 10px auto 0;
+    }
+  }
+  .rent {
+    &__content-title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    &__links-list {
+      display: none;
+    }
+  }
+  .equipment {
+    &__slider__arrow {
+      width: 40px;
+      height: 40px;
+      left: 0;
+      &--next {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+  .contacts {
+    &__address-item {
+      width: 100%;
+    }
+    &__address__item-key {
+      margin-right: 10px;
+      width: 50%;
+    }
+    &__address__item-value {
+      width: 50%;
+    }
+    &__left {
+      width: 100%;
+    }
+  }
+  .delivery {
+    &__text {
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &__item {
+      &::before {
+        top: 0;
+        transform: translateY(0);
+      }
+    }
+    &__item + &__item {
+      margin-top: 20px;
+    }
+    &__item:nth-child(2n + 1) {
+      text-align: left;
+      padding: 0;
+      padding-top: 60px;
+      &::before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &__item:nth-child(2n) {
+      padding: 0;
+      padding-top: 60px;
+      &::before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  .about-top {
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .about-items {
+    padding-top: 10px;
+    .about-item {
+      margin-bottom: 10px;
+    }
+    .about-item:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+  .about-advantages{
+      &__item{
+          margin-bottom: 15px;
+      }
+  }
+}
